@@ -1,0 +1,80 @@
+@use '../variables/index' as *;
+
+body {
+  .main {
+    min-height: 100vh;
+    padding: 12em 1em 0;
+    background: linear-gradient(to bottom, $soft-violet, $soft-blue);
+    .box {
+      display: none;
+    }
+    .faq-card {
+      max-width: 350px;
+      background: #fff;
+      margin: 0 auto;
+      position: relative;
+      border-radius: $corner-rounded;
+      .desktop-img {
+        display: none;
+      }
+      .mobile-img-one {
+        position: absolute;
+        margin: 0 auto;
+        left: -20px;
+        right: 0;
+        top: -110px;
+      }
+      .mobile-img-two {
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: -10px;
+        top: -10px;
+      }
+      .faq {
+        padding: 10em 2em 2em;
+        &-header {
+          text-align: center;
+          margin-bottom: 1em;
+        }
+        &-que-ans {
+          border-bottom: 1px solid $lt-grayissh-blue;
+          .flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .accordian-que,
+          .accordian-ans {
+            font-size: 1.2em;
+          }
+          .accordian-ans {
+            color: $drk-grayish-blue;
+            margin-top: 0;
+          }
+          .hide-ans {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+//this is a class to add dynamically
+.arrow-down {
+  transition: transform 0.5s ease-in-out;
+  & {
+    transform: rotate(0deg);
+  }
+}
+.arrow-up {
+  transition: transform 0.5s ease-in-out;
+  & {
+    transform: rotate(180deg);
+  }
+}
+
+.text-bold {
+  font-weight: 700;
+}

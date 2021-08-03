@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+body .main {
+  min-height: 100vh;
+  padding: 12em 1em 0;
+  background: linear-gradient(to bottom, #af67e9, #6565e7);
+}
+body .main .box {
+  display: none;
+}
+body .main .faq-card {
+  max-width: 350px;
+  background: #fff;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 2em;
+}
+body .main .faq-card .desktop-img {
+  display: none;
+}
+body .main .faq-card .mobile-img-one {
+  position: absolute;
+  margin: 0 auto;
+  left: -20px;
+  right: 0;
+  top: -110px;
+}
+body .main .faq-card .mobile-img-two {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: -10px;
+  top: -10px;
+}
+body .main .faq-card .faq {
+  padding: 10em 2em 2em;
+}
+body .main .faq-card .faq-header {
+  text-align: center;
+  margin-bottom: 1em;
+}
+body .main .faq-card .faq-que-ans {
+  border-bottom: 1px solid #e7e7e9;
+}
+body .main .faq-card .faq-que-ans .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .main .faq-card .faq-que-ans .accordian-que,
+body .main .faq-card .faq-que-ans .accordian-ans {
+  font-size: 1.2em;
+}
+body .main .faq-card .faq-que-ans .accordian-ans {
+  color: #787887;
+  margin-top: 0;
+}
+body .main .faq-card .faq-que-ans .hide-ans {
+  display: none;
+}
+
+.arrow-down {
+  transition: transform 0.5s ease-in-out;
+}
+.arrow-down {
+  transform: rotate(0deg);
+}
+
+.arrow-up {
+  transition: transform 0.5s ease-in-out;
+}
+.arrow-up {
+  transform: rotate(180deg);
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 854px) {
+  body .main {
+    padding: 5em;
+  }
+  body .main .faq-card {
+    max-width: 750px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0;
+    position: relative;
+    background-image: url("../../images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: -13% center;
+  }
+  body .main .faq-card .mobile-img {
+    display: none;
+  }
+  body .main .faq-card .box {
+    max-width: 120px;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 54%;
+    left: 0;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  body .main .faq-card .desktop-img {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+  }
+  body .main .faq-card .desktop-img-one {
+    width: 100%;
+    height: auto;
+    max-width: 21rem;
+    transform: translateX(-4rem);
+  }
+  body .main .faq-card .faq {
+    padding: 0;
+    max-width: 300px;
+    margin: 1em 4em;
+  }
+  body .main .faq-card .faq-header {
+    text-align: left;
+  }
+  body .main .faq-card .faq .accordian-que {
+    margin-right: 2em;
+  }
+}
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
